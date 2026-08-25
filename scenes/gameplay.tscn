@@ -1,3 +1,23 @@
 [gd_scene format=3 uid="uid://cwuufv3558uwk"]
 
+[ext_resource type="PackedScene" uid="uid://cn5obh3nvtcu5" path="res://scenes/wall.tscn" id="1_7biu0"]
+
+[sub_resource type="Gradient" id="Gradient_7biu0"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(0.21230483, 0.21230483, 0.21230483, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_00tan"]
+gradient = SubResource("Gradient_7biu0")
+width = 16
+height = 600
+
 [node name="Gameplay" type="Node2D" unique_id=1225641943]
+
+[node name="Divider" type="Sprite2D" parent="." unique_id=1102717045]
+position = Vector2(400, 300)
+texture = SubResource("GradientTexture2D_00tan")
+
+[node name="Wall" parent="." unique_id=1177926805 instance=ExtResource("1_7biu0")]
+
+[node name="Wall2" parent="." unique_id=805145854 instance=ExtResource("1_7biu0")]
+position = Vector2(0, 584)
