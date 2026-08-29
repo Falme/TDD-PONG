@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://khvftnlihu56"]
+
+[sub_resource type="Gradient" id="Gradient_2sqkt"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_aorxj"]
+gradient = SubResource("Gradient_2sqkt")
+width = 16
+
+[node name="Paddle" type="Sprite2D" unique_id=449234400]
+texture = SubResource("GradientTexture2D_aorxj")

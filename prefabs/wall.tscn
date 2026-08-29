@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cn5obh3nvtcu5"]
+
+[sub_resource type="Gradient" id="Gradient_7biu0"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_aorxj"]
+gradient = SubResource("Gradient_7biu0")
+width = 800
+height = 16
+
+[node name="Wall" type="Sprite2D" unique_id=1177926805]
+texture = SubResource("GradientTexture2D_aorxj")
+centered = false
