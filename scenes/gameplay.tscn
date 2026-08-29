@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cwuufv3558uwk"]
 
-[ext_resource type="PackedScene" uid="uid://cn5obh3nvtcu5" path="res://scenes/wall.tscn" id="1_7biu0"]
+[ext_resource type="PackedScene" uid="uid://cn5obh3nvtcu5" path="res://prefabs/wall.tscn" id="1_7biu0"]
 
 [sub_resource type="Gradient" id="Gradient_7biu0"]
 offsets = PackedFloat32Array(1)
