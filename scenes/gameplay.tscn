@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cwuufv3558uwk"]
 
 [ext_resource type="PackedScene" uid="uid://cn5obh3nvtcu5" path="res://prefabs/wall.tscn" id="1_7biu0"]
+[ext_resource type="PackedScene" uid="uid://khvftnlihu56" path="res://prefabs/paddle.tscn" id="2_00tan"]
 
 [sub_resource type="Gradient" id="Gradient_7biu0"]
 offsets = PackedFloat32Array(1)
@@ -21,3 +22,13 @@ texture = SubResource("GradientTexture2D_00tan")
 
 [node name="WallBottom" parent="." unique_id=805145854 instance=ExtResource("1_7biu0")]
 position = Vector2(0, 584)
+
+[node name="PaddleLeft" parent="." unique_id=449234400 instance=ExtResource("2_00tan")]
+position = Vector2(10, 300)
+input_up = "player_one_up"
+input_down = "player_one_down"
+
+[node name="PaddleRight" parent="." unique_id=1066041350 instance=ExtResource("2_00tan")]
+position = Vector2(790, 300)
+input_up = "player_two_up"
+input_down = "player_two_down"
