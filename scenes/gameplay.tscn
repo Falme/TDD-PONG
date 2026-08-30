@@ -2,7 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://cn5obh3nvtcu5" path="res://prefabs/wall.tscn" id="1_7biu0"]
 [ext_resource type="PackedScene" uid="uid://khvftnlihu56" path="res://prefabs/paddle.tscn" id="2_00tan"]
-[ext_resource type="Script" uid="uid://c3nhl20cev0w8" path="res://scripts/paddle.gd" id="3_l1v76"]
 
 [sub_resource type="Gradient" id="Gradient_7biu0"]
 offsets = PackedFloat32Array(1)
@@ -26,8 +25,10 @@ position = Vector2(0, 584)
 
 [node name="PaddleLeft" parent="." unique_id=449234400 instance=ExtResource("2_00tan")]
 position = Vector2(10, 300)
-script = ExtResource("3_l1v76")
-_velocity = 10.0
+input_up = "player_one_up"
+input_down = "player_one_down"
 
 [node name="PaddleRight" parent="." unique_id=1066041350 instance=ExtResource("2_00tan")]
 position = Vector2(790, 300)
+input_up = "player_two_up"
+input_down = "player_two_down"

@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://khvftnlihu56"]
 
+[ext_resource type="Script" uid="uid://c3nhl20cev0w8" path="res://scripts/paddle.gd" id="1_q73f6"]
+
 [sub_resource type="Gradient" id="Gradient_2sqkt"]
 offsets = PackedFloat32Array(1)
 colors = PackedColorArray(1, 1, 1, 1)
@@ -10,3 +12,5 @@ width = 16
 
 [node name="Paddle" type="Sprite2D" unique_id=449234400]
 texture = SubResource("GradientTexture2D_aorxj")
+script = ExtResource("1_q73f6")
+_velocity = 100.0
